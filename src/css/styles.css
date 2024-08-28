@@ -236,7 +236,7 @@ section.topo-do-site .flex {
     justify-content: space-between;
     align-items: center;
     justify-content: center;
-    gap: 90px;
+    gap: 0px;
     margin: 0 auto;
 }
 
@@ -262,8 +262,8 @@ section.topo-do-site .flex {
 .topo-do-site .img-topo-site img {
     position: relative;
     z-index: -1;
-    width: 120%;
-    height: 570px;
+    width: 110%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -286,7 +286,6 @@ section.topo-do-site .flex {
 
 section.especialidades {
     padding: 40px 4%;
-    height: 100vh;
 }
 
 section.especialidades .flex {
@@ -351,6 +350,7 @@ section.sobre .flex {
     margin: 20px 0;
     letter-spacing: 0.5px;
     line-height: 27px;
+    text-align: justify;
 }
 
 .sobre .btn-social{
@@ -418,13 +418,13 @@ section.projetos .flex {
 .project2{
     background: url(../imagens/127.0.0.1_3000_index.html\ \(1\).png);
     background-size: cover;
-    transition: 4s;
+    transition: 3s;
 }
 
 .project3{
-    background: url(../imagens/127.0.0.1_3002_index.html.png);
+    background: url(../imagens/netflix.png);
     background-size: cover;
-    transition: 5s;
+    transition: 3s;
 }
 
 /* ESTILO DO FORMULÁRIO DE CONTATO*/

@@ -130,7 +130,7 @@ header nav.menu-desktop a:hover {
 
 header nav ul {
     list-style-type: none;
-    margin-left: 10px;
+    margin-left: 40px;
 }
 
 header nav.menu-desktop ul li {
@@ -143,9 +143,10 @@ header .menu-desktop {
     align-items: center;
 }
 
-header .menu-desktop .logo a {
-    font-size: 30px;
-
+header .menu-desktop .logo a img{
+    display: flex;
+    align-items: center;
+    width: 40px;
 }
 
 /* ESTILO MENU MOBILE */

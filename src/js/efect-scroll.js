@@ -10,9 +10,9 @@ revelar.reveal('.efeito-txt-topo',
 
 revelar.reveal('.efeito-img-topo',
     {
-        duration: 2000,
+        duration: 2500,
         distance: '90px',
-        delay: 650,
+        delay: 600,
         origin: 'top',
         easing: 'ease-out'
     });

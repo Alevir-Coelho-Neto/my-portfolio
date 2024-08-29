@@ -469,13 +469,13 @@ section.projetos .flex {
 }
 
 .project1 {
-    background: url(../imagens/127.0.0.1_3000_index.html.png);
+    background: url(../imagens/the-wellhall.png);
     background-size: cover;
     transition: 5s;
 }
 
 .project2 {
-    background: url(../imagens/127.0.0.1_3000_index.html\ \(1\).png);
+    background: url(../imagens/primefit-academy.png);
     background-size: cover;
     transition: 3s;
 }

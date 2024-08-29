@@ -28,6 +28,17 @@ revelar.reveal('.titulo',
 
 // SESSÃO DE ESPECIALIDADES
 
+revelar.reveal('.efeito-especialidades',
+    {
+        duration: 1500,
+        distance: '90px',
+        delay: 300,
+        origin: 'top',
+        scale: 0.5,
+        opacity: 0,
+        easing: 'ease-out',
+    });
+
 revelar.reveal('.efeito-especialidades1',
     {
         duration: 1100,
@@ -165,4 +176,3 @@ revelar.reveal('.efect-btn-enviar',
         opacity: 0,
         easing: 'ease-out',
     });
-

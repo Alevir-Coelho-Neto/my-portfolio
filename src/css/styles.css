@@ -157,6 +157,29 @@ header .menu-desktop .logo a img {
     width: 40px;
 }
 
+/* marcação da seção */
+
+.nav-link {
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #40A2D8;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link.active::after {
+    transform: scaleX(1);
+}
+
 /* ESTILO MENU MOBILE */
 
 .menu-mobile {
@@ -631,8 +654,7 @@ footer .line-footer p a {
         color: white;
         font-size: 17px;
         
-    }
-    
+    }  
 }
 
 @media screen and (max-width: 1020px) {

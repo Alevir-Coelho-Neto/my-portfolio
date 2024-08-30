@@ -745,6 +745,11 @@ footer .line-footer p a {
         transition: .2s ease-out;
     }
 
+    .especialidades .flex {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     /* ESTILOS SOBRE */
 
     .img-sobre img {

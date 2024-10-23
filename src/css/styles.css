@@ -47,9 +47,10 @@ h2.titulo span {
 }
 
 button:hover,
-form .btn-enviar input[type=submit]:hover {
+form .btn-enviar input:hover[type=submit] {
     box-shadow: 0px 0px 15px #0056b3;
     transform: scale(1.1);
+    color: white;
 }
 
 .btn-social button {
@@ -61,8 +62,12 @@ form .btn-enviar input[type=submit]:hover {
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
-    transition: .4s;
+    transition: .3s;
     color: black;
+}
+
+.btn-social button:hover {
+    color: white;
 }
 
 /* EFEITO SCROLL */
@@ -303,12 +308,13 @@ section.topo-do-site .flex {
 
 .topo-do-site .btn-contato button a {
     text-decoration: none;
-    color: #000;
-    transition: .8s
+    color: black;
+    transition: .8s;
 }
 
-.topo-do-site .btn-contato button:hover{
-    background-color: #f0f0f0; /* Adiciona uma leve mudança de cor de fundo */
+.topo-do-site .btn-contato button:hover {
+    background-color: #f0f0f0;
+    /* Adiciona uma leve mudança de cor de fundo */
 }
 
 /* Estilos DAS ESPECIALIDADES */
@@ -345,10 +351,6 @@ section.especialidades .flex {
     transition: 1.4s !important;
 }
 
-.especialidades .especialidades-box i {
-    font-size: 70px;
-}
-
 .especialidades .especialidades-box img {
     width: 70px;
 }
@@ -362,6 +364,7 @@ section.especialidades .flex {
 
 section.o-que-eu-faco {
     padding: 40px 4%;
+    height: 100%;
 }
 
 section.o-que-eu-faco .flex {
@@ -396,10 +399,6 @@ section.o-que-eu-faco .flex {
     font-size: 70px;
 }
 
-.o-que-eu-faco .especialidades-box img {
-    width: 70px;
-}
-
 .o-que-eu-faco .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
@@ -409,6 +408,7 @@ section.o-que-eu-faco .flex {
 
 section.sobre {
     padding: 80px 4%;
+    height: 100%;
 }
 
 section.sobre .flex {
@@ -636,7 +636,7 @@ footer .line-footer p a {
     }
 }
 
-@media screen and (max-width: 1231px){ 
+@media screen and (max-width: 1231px) {
     header a {
         font-size: 17px;
     }
@@ -646,15 +646,57 @@ footer .line-footer p a {
         padding: 0 20px;
     }
 
-    header nav.menu-desktop ul{
+    header nav.menu-desktop ul {
         margin-left: 15px;
     }
 
     header .btn-contato button {
         color: white;
         font-size: 17px;
-        
-    }  
+
+    }
+}
+
+@media screen and (max-width: 1160px) {
+
+    /* O que eu faço*/
+
+    .o-que-eu-faco .especialidades-box {
+        padding: 20px 40px;
+        height: 500px;
+    }
+
+    .o-que-eu-faco .especialidades-box i {
+        font-size: 4rem;
+    }
+
+    .o-que-eu-faco .especialidades-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .o-que-eu-faco .especialidades-box p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* Sobre */
+
+    .sobre .txt-sobre h2 {
+        font-size: 1.9rem;
+    }
+
+    .sobre .txt-sobre p {
+        text-align: start;
+    }
+
+    /* Projetos */
+
+    section.projetos .flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        row-gap: 90px;
+    }
 }
 
 @media screen and (max-width: 1020px) {
@@ -686,11 +728,15 @@ footer .line-footer p a {
         cursor: pointer;
     }
 
-    .menu-desktop .logo,
-    .menu-desktop ul,
-    .btn-contato {
+    header .menu-desktop,
+    header .menu-desktop+.btn-contato {
         display: none;
     }
+
+    .btn-contato {
+        text-align: center;
+    }
+
 
     .especialidades {
         scroll-margin-top: -35px;
@@ -701,8 +747,8 @@ footer .line-footer p a {
     .topo-do-site {
         display: flex;
         align-items: center;
-        height: 100vh;
-        margin-top: 40px;
+        height: 100%;
+        margin-top: 0px;
         margin-bottom: 70px;
     }
 
@@ -714,11 +760,15 @@ footer .line-footer p a {
         gap: 40px;
     }
 
+    .img-topo-site {
+        width: 100%;
+        max-width: 350px;
+    }
+
     .topo-do-site .img-topo-site img {
         position: relative;
         z-index: -1;
         width: 100%;
-
         height: auto;
         object-fit: cover;
     }
@@ -729,10 +779,12 @@ footer .line-footer p a {
 
     .topo-do-site h1 {
         font-size: 30px;
+        text-align: center;
     }
 
     .topo-do-site .txt-topo-site p {
         max-width: 100%;
+        text-align: center;
     }
 
     /* ESTILOS ESPECIALIDADES */
@@ -745,15 +797,28 @@ footer .line-footer p a {
         transition: .2s ease-out;
     }
 
-    .especialidades .flex {
+    section.especialidades .flex {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        row-gap: 0px;
+        column-gap: 15px;
+    }
+
+    .especialidades .especialidades-box img {
+        width: 60px;
     }
 
     /* ESTILOS SOBRE */
 
     .img-sobre img {
         width: 100%;
+    }
+
+    section.projetos .flex {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
     }
 
     section.sobre {
@@ -801,10 +866,19 @@ footer .line-footer p a {
     }
 }
 
+@media screen and (max-width: 830px){
+
+    section.especialidades .flex{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    /*body{
-        border: 10px solid blue;
-    }*/
+    /* Estilos Gerais*/
+
+    h2.titulo {
+        font-size: 50px;
+    }
 
     /* Menu mobile */
 
@@ -837,15 +911,22 @@ footer .line-footer p a {
         gap: 90px;
     }
 
+    .img-topo-site {
+        width: 100%;
+        max-width: 450px;
+    }
+
     .topo-do-site .img-topo-site img {
         position: relative;
-        min-width: 500px;
+        z-index: -1;
+        width: 100%;
         height: auto;
         object-fit: cover;
     }
 
     section.topo-do-site {
-        padding: 20px 8%;
+        padding: 0 8%;
+        height: 100%;
     }
 
     .topo-do-site h1 {
@@ -853,37 +934,97 @@ footer .line-footer p a {
         text-align: center;
         line-height: 50px;
         width: 100%;
+        margin-bottom: 70px;
     }
 
     .topo-do-site .txt-topo-site p {
         max-width: 100%;
         font-size: 25px;
-        text-align: justify;
+        text-align: center;
+    }
+
+    .topo-do-site .btn-contato button {
+        padding: 15px 20px;
+        border-radius: 40px;
+        margin-top: 30px;
+    }
+
+    .topo-do-site .btn-contato button a {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .topo-do-site .btn-contato button:hover {
+        background-color: #f0f0f0;
+        /* Adiciona uma leve mudança de cor de fundo */
     }
 
     /* ESTILOS ESPECIALIDADES */
 
-    /* Estilos DAS ESPECIALIDADES */
-
     section.especialidades {
-        padding: 100px 4%;
+        padding: 0 4%;
+        height: 100%;
+        margin-top: 150px;
     }
 
-    .especialidades .especialidades-box {
+    section.especialidades .flex {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 0px;
+        column-gap: 15px;
+    }
+
+    .especialidades .especialidades-box img{
+        width: 70px;
+    }
+
+    /* Estilos O que eu faço*/
+
+    section.o-que-eu-faco {
+        height: 100%;
+        margin-top: 120px;
+    }
+
+    section.o-que-eu-faco .flex {
+        row-gap: 0px;
+        column-gap: 40px;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
         margin-top: 60px;
     }
 
-    .especialidades .especialidades-box i {
-        font-size: 90px;
-        color: #40A2D8;
+    .o-que-eu-faco .especialidades-box {
+        max-height: 700px;
+        height: 100%;
+        width: 90%;
     }
 
-    .especialidades .especialidades-box h3 {
-        font-size: 28px;
-        margin: 15px 0;
+
+    .o-que-eu-faco .especialidades-box:hover {
+        box-shadow: 0 0 20px #ffffff78;
+    }
+
+    .o-que-eu-faco .especialidades-box i {
+        font-size: 80px;
+        color: #0056b3;
+    }
+
+    .o-que-eu-faco .especialidades-box h3 {
+        font-size: 40px;
+    }
+
+    .o-que-eu-faco .especialidades-box p {
+        font-size: 22px;
+        letter-spacing: 4px;
+        width: 100%;
     }
 
     /* ESTILOS SOBRE */
+
+    section.sobre {
+        height: 100%;
+    }
 
     .img-sobre img {
         width: 100%;
@@ -894,13 +1035,82 @@ footer .line-footer p a {
     }
 
     .sobre .txt-sobre h2 {
-        font-size: 34px;
+        font-size: 45px;
         line-height: 40px;
         text-align: center;
+        margin-top: 30px;
     }
 
-    .btn-social {
+    .sobre .txt-sobre p {
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+        line-height: 1.5;
+        text-align: start;
+        margin-top: 50px;
+    }
+
+    .sobre .btn-social {
         text-align: center;
+        margin-top: 100px;
     }
 
+    .sobre .btn-social button {
+        width: 90px;
+        height: 90px;
+        font-size: 30px;
+        margin: 0 20px;
+    }
+
+    /* Estilos Projetos */
+
+    section.projetos {
+        padding: 80px 5%;
+    }
+
+    section.projetos .flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        margin-top: 120px;
+    }
+
+    /* Contato */
+
+    form input,
+    form textarea {
+        padding: 30px 15px;
+        border-radius: 20px;
+    }
+
+    form input::placeholder,
+    form textarea::placeholder {
+        font-size: 23px;
+    }
+
+    form .btn-enviar input[type=submit] {
+        width: 130px;
+        font-size: 23px;
+    }
+
+    /* Footer */
+
+    footer .btn-social button {
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+        margin: 0 20px;
+    }
+
+    footer .line-footer p i {
+        font-size: 30px;
+    }
+
+    footer .line-footer p a {
+        font-size: 30px;
+        transition: all .5s ease;
+    }
+
+    footer .line-footer p a:hover {
+        color: #40A2D8;
+    }
 }

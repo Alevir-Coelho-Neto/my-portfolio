@@ -1,73 +1,73 @@
 /* Estilo geral*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #000000;
-    overflow-x: hidden;
+  background-color: #000000;
+  overflow-x: hidden;
 }
 
 .interface {
-    max-width: 1280px;
-    margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .btn-contato button {
-    padding: 12px 20px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #1195dc;
-    border: 0;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: .7s ease;
-    color: #FFFFFF;
-    font-size: 20px;
-    margin: 0;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #1195dc;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.7s ease;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0;
 }
 
 h2.titulo {
-    color: #f1f1f1;
-    font-size: 38px;
-    text-align: center;
-    text-transform: uppercase;
+  color: #f1f1f1;
+  font-size: 38px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 h2.titulo span {
-    color: #40A2D8;
+  color: #40a2d8;
 }
 
 button:hover,
-form .btn-enviar input:hover[type=submit] {
-    box-shadow: 0px 0px 15px #0056b3;
-    transform: scale(1.1);
-    color: white;
+form .btn-enviar input:hover[type="submit"] {
+  box-shadow: 0px 0px 15px #0056b3;
+  transform: scale(1.1);
+  color: white;
 }
 
 .btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: #40A2D8;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: .3s;
-    color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #40a2d8;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 0.3s;
+  color: black;
 }
 
 .btn-social button:hover {
-    color: white;
+  color: white;
 }
 
 /* EFEITO SCROLL */
@@ -88,1029 +88,1053 @@ form .btn-enviar input:hover[type=submit] {
 .input3,
 .textarea1,
 .efect-btn-enviar {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /* Margin menu fixo */
 
 .topo-do-site {
-    scroll-margin-top: 200px;
+  scroll-margin-top: 200px;
 }
 
 .o-que-eu-faco {
-    scroll-margin-top: 120px;
+  scroll-margin-top: 120px;
 }
 
 /* ESTILO DO CABEÇALHO */
 
 header {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    padding: 60px 4%;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 60px 4%;
 }
 
-header>.interface {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 header a {
-    display: inline-block;
-    color: #ffff;
-    font-weight: 500;
-    text-decoration: none;
-    transition: all .5s ease-out;
-    font-size: 18px;
+  display: inline-block;
+  color: #ffff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  font-size: 18px;
 }
 
 header .btn-contato button {
-    background-color: #1195DC;
-    color: #000;
-    transition: .8s;
+  background-color: #1195dc;
+  color: #000;
+  transition: 0.8s;
 }
 
 header .btn-contato button:hover {
-    color: white;
+  color: white;
 }
 
 header nav.menu-desktop a:hover {
-    color: #40A2D8;
-    transform: scale(1.2);
+  color: #40a2d8;
+  transform: scale(1.2);
 }
 
 header nav ul {
-    list-style-type: none;
-    margin-left: 40px;
+  list-style-type: none;
+  margin-left: 40px;
 }
 
 header nav.menu-desktop ul li {
-    display: inline-block;
-    padding: 0 35px;
+  display: inline-block;
+  padding: 0 35px;
 }
 
 header .menu-desktop {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 header .menu-desktop .logo a img {
-    display: flex;
-    align-items: center;
-    width: 40px;
+  display: flex;
+  align-items: center;
+  width: 40px;
 }
 
-/* marcação da seção */
+/* marcação da seção no menu */
 
 .nav-link {
-    text-decoration: none;
-    position: relative;
+  text-decoration: none;
+  position: relative;
 }
 
 .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #40A2D8;
-    bottom: 0;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #40a2d8;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .nav-link.active::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* ESTILO MENU MOBILE */
 
 .menu-mobile {
-    background-color: #000;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 0%;
-    overflow: hidden;
-    transition: .5s;
-    z-index: 10;
+  background-color: #000;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0%;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 10;
 }
 
 .menu-mobile.abrir-menu-mobile {
-    width: 70%;
+  width: 70%;
 }
 
-.menu-mobile.abrir-menu-mobile~.overlay-menu-mobile {
-    display: block;
+.menu-mobile.abrir-menu-mobile ~ .overlay-menu-mobile {
+  display: block;
 }
 
 .menu-mobile nav ul {
-    text-align: right;
+  text-align: right;
 }
 
 .menu-mobile nav ul li a {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 200;
-    padding: 20px 8%;
-    display: block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 20px 8%;
+  display: block;
 }
 
 .menu-mobile nav ul li a:hover {
-    background-color: #40A2D8;
-    color: #000;
-    font-weight: 400;
+  background-color: #40a2d8;
+  color: #000;
+  font-weight: 400;
 }
 
 .menu-mobile .btn-fechar {
-    padding: 20px 5%;
+  padding: 20px 5%;
 }
 
 .menu-mobile .btn-fechar i {
-    color: #40A2D8;
-    font-size: 30px;
-    cursor: pointer;
+  color: #40a2d8;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .btn-abrir-menu {
-    display: none;
+  display: none;
 }
 
 .btn-abrir-menu i {
-    color: #40A2D8;
-    font-size: 40px;
-    padding-right: 20px;
-    display: none;
-    position: fixed;
+  color: #40a2d8;
+  font-size: 40px;
+  padding-right: 20px;
+  display: none;
+  position: fixed;
 }
 
 .overlay-menu-mobile {
-    background-color: #000000df;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    display: none;
+  background-color: #000000df;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
 }
 
 /* ESTILO DO TOPO DO SITE */
 
 .topo-do-site {
-    display: grid;
-    align-items: center;
-    height: 100vh;
-    margin-top: 40px;
-    width: 100%;
-    padding: 0 4%;
+  display: grid;
+  align-items: center;
+  height: 100vh;
+  margin-top: 40px;
+  width: 100%;
+  padding: 0 4%;
 }
 
 section.topo-do-site .flex {
-    display: grid;
-    grid-template-columns: 1.8fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-    gap: 0px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  margin: 0 auto;
 }
 
 .topo-do-site h1 {
-    color: #F0EDCF;
-    font-size: 42px;
-    line-height: 40px;
-    text-transform: uppercase;
+  color: #f0edcf;
+  font-size: 42px;
+  line-height: 40px;
+  text-transform: uppercase;
 }
 
 .topo-do-site .txt-topo-site h1 span {
-    color: #40A2D8;
-    letter-spacing: 1.2px;
+  color: #40a2d8;
+  letter-spacing: 1.2px;
 }
 
 .topo-do-site .txt-topo-site p {
-    color: #F0EDCF;
-    margin: 40px 0 60px;
-    max-width: 80%;
-    letter-spacing: 1.2px;
+  color: #f0edcf;
+  margin: 40px 0 60px;
+  max-width: 80%;
+  letter-spacing: 1.2px;
 }
 
 .topo-do-site .img-topo-site img {
-    position: relative;
-    z-index: -1;
-    width: 110%;
-    height: auto;
-    object-fit: cover;
+  position: relative;
+  z-index: -1;
+  width: 110%;
+  height: auto;
+  object-fit: cover;
 }
 
 .topo-do-site .btn-contato button a {
-    text-decoration: none;
-    color: black;
-    transition: .8s;
+  text-decoration: none;
+  color: black;
+  transition: 0.8s;
 }
 
 .topo-do-site .btn-contato button:hover {
-    background-color: #f0f0f0;
-    /* Adiciona uma leve mudança de cor de fundo */
+  background-color: #f0f0f0;
+  /* Adiciona uma leve mudança de cor de fundo */
 }
 
-/* Estilos DAS ESPECIALIDADES */
+/* Estilos das Especialidades */
 
 section.especialidades {
-    padding: 40px 4%;
-    margin-bottom: 50px;
+  padding: 40px 4%;
+  margin-bottom: 50px;
 }
 
 section.especialidades .flex {
-    row-gap: 0px;
-    column-gap: 40px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
+  row-gap: 0px;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
 }
 
 .especialidades .especialidades-box {
-    color: #F0EDCF;
-    padding: 40px;
-    margin-top: 45px;
-    border-radius: 20px;
-    transition: .7s;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid #ffffff1d;
+  color: white;
+  padding: 40px;
+  margin-top: 45px;
+  border-radius: 20px;
+  transition: 0.7s;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ffffff1d;
 }
-
 
 .especialidades .especialidades-box:hover {
-    box-shadow: 0 0 20px #ffffff78;
-    transform: translateY(-20px) !important;
-    transition: 1.4s !important;
+  box-shadow: 0 0 20px #ffffff78;
+  transform: translateY(-20px) !important;
+  transition: 1.4s !important;
 }
 
+/*--------name tecnologia--------*/
+
+.name-tecnologia {
+  position: relative;
+}
+
+.name-tecnologia span {
+  position: absolute;
+  bottom: -33px; /* Ajuste de acordo com a distância que você quer abaixo do ícone */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 2s ease; /* Tempo de transição reduzido */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.especialidades .especialidades-box:hover .name-tecnologia span {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*----------------*/
+
 .especialidades .especialidades-box img {
-    width: 70px;
+  width: 70px;
 }
 
 .especialidades .especialidades-box h3 {
-    font-size: 28px;
-    margin: 15px 0;
+  font-size: 28px;
+  margin: 15px 0;
 }
 
 /* Estilos o que eu faço */
 
 section.o-que-eu-faco {
-    padding: 40px 4%;
-    height: 100%;
+  padding: 40px 4%;
+  height: 100%;
 }
 
 section.o-que-eu-faco .flex {
+  row-gap: 0px;
+  column-gap: 40px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.o-que-eu-faco .especialidades-box {
+  color: #f0edcf;
+  padding: 45px;
+  margin-top: 45px;
+  border-radius: 20px;
+  transition: 0.7s;
+  text-align: center;
+  cursor: pointer;
+  width: 400px;
+  height: 480px;
+  border: 1px solid #ffffff1d; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.o-que-eu-faco .especialidades-box:hover {
+  box-shadow: 0 0 20px #ffffff78;
+}
+
+.o-que-eu-faco .especialidades-box i {
+  font-size: 70px;
+}
+
+.o-que-eu-faco .especialidades-box h3 {
+  font-size: 28px;
+  margin: 20px 0;
+
+}
+
+/* ESTILO DO SOBRE */
+
+section.sobre {
+  padding: 80px 4%;
+  height: 100%;
+}
+
+section.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+
+.sobre .img-sobre img {
+  border-radius: 40px;
+}
+
+.sobre .txt-sobre {
+  color: #f0edcf;
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 40px;
+  margin-bottom: 30px;
+  color: #f0edcf;
+}
+
+.sobre .txt-sobre span {
+  display: block;
+  color: #40a2d8;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  letter-spacing: 0.5px;
+  line-height: 27px;
+  text-align: justify;
+}
+
+.sobre .btn-social {
+  margin-top: 47px;
+}
+
+.sobre .btn-social button {
+  margin-right: 20px;
+}
+
+/* ESTILO DOS PROJETOS*/
+
+section.projetos {
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.projetos .flex {
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.img-project {
+  width: 360px;
+  height: 460px;
+  background-position: 100% 0%;
+  border-radius: 40px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 0 10px 2px #40a3d8a8
+}
+
+.img-project:hover {
+  background-position: 100% 100%;
+}
+
+.img-project .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #000000b8;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img-project .overlay:hover {
+  opacity: 1;
+}
+
+.project1 {
+  background: url(../imagens/the-wellhall.png);
+  background-size: cover;
+  transition: 5s;
+}
+
+.project2 {
+  background: url(../imagens/primefit-academy.png);
+  background-size: cover;
+  transition: 3s;
+}
+
+.project3 {
+  background: url(../imagens/netflix.png);
+  background-size: cover;
+  transition: 3s;
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO*/
+
+section.formulario {
+  padding: 80px 4%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: #242424;
+  border: none;
+  outline: none;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.5s ease-out;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #ffffffc3;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 10px 1px #40a2d8;
+}
+
+form textarea {
+  resize: none;
+  height: 150px;
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input[type="submit"] {
+  width: 120px;
+  background-color: #40a2d8;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* ESTILO DO FOOTER*/
+
+footer {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .line-footer {
+  padding: 20px 0;
+}
+
+footer .line-footer:nth-child(1) {
+  border-bottom: 3px solid #40a2d8;
+}
+
+footer .line-footer p {
+  display: flex;
+  align-items: center;
+}
+
+footer .line-footer p i {
+  color: #40a2d8;
+  font-size: 22px;
+  padding-right: 5px;
+}
+
+footer .line-footer p a {
+  color: #f0edcf;
+  font-size: 17px;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (min-width: 1021px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: #000000;
+    height: 86px;
+  }
+
+  .projetos {
+    scroll-margin-top: 75px;
+  }
+
+  .formulario {
+    scroll-margin-top: 60px;
+  }
+
+  .especialidades,
+  .sobre {
+    scroll-margin-top: 125px;
+  }
+}
+
+@media screen and (max-width: 1231px) {
+  header a {
+    font-size: 17px;
+  }
+
+  header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  header nav.menu-desktop ul {
+    margin-left: 15px;
+  }
+
+  header .btn-contato button {
+    color: white;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  /* O que eu faço*/
+
+  .o-que-eu-faco .especialidades-box {
+    padding: 20px 40px;
+    height: 500px;
+  }
+
+  .o-que-eu-faco .especialidades-box i {
+    font-size: 4rem;
+  }
+
+  .o-que-eu-faco .especialidades-box h3 {
+    font-size: 1.7rem;
+  }
+
+  .o-que-eu-faco .especialidades-box p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* Sobre */
+
+  .sobre .txt-sobre h2 {
+    font-size: 1.7rem;
+  }
+
+  .sobre .txt-sobre p {
+    text-align: start;
+    font-size: 18px;
+  }
+
+  /* Projetos */
+
+  section.projetos .flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 90px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+
+  /* CLASSES GERAIS */
+  .flex {
+    flex-direction: column;
+  }
+
+  h2.titulo {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  /* CABEÇALHO */
+
+  .btn-abrir-menu {
+    display: block;
+  }
+
+  .btn-abrir-menu i {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 4px;
+    z-index: 7;
+    cursor: pointer;
+  }
+
+  header .menu-desktop,
+  header .menu-desktop + .btn-contato {
+    display: none;
+  }
+
+  .btn-contato {
+    text-align: center;
+  }
+
+  .especialidades {
+    scroll-margin-top: -35px;
+  }
+
+  /* HOME */
+
+  .topo-do-site {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 70px;
+  }
+
+  section.topo-do-site .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .img-topo-site {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .topo-do-site .img-topo-site img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  section.topo-do-site {
+    padding: 20px 8%;
+  }
+
+  .topo-do-site h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .topo-do-site .txt-topo-site p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* ESTILOS ESPECIALIDADES */
+
+  section.especialidades {
+    padding: 40px 8%;
+  }
+
+  .especialidades .especialidades-box {
+    transition: 0.2s ease-out;
+  }
+
+  section.especialidades .flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0px;
+    column-gap: 15px;
+  }
+
+  .especialidades .especialidades-box img {
+    width: 60px;
+  }
+
+  /* ESTILOS SOBRE */
+
+  .img-sobre img {
+    width: 100%;
+  }
+
+  section.projetos .flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  section.sobre {
+    padding: 80px 8%;
+  }
+
+  .sobre .txt-sobre h2 {
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .btn-social {
+    text-align: center;
+  }
+
+  /* ESTILOS PROJETOS */
+
+  section.projetos {
+    padding: 80px 8%;
+  }
+
+  .img-project {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  section.projetos .flex {
+    gap: 60px;
+  }
+
+  /* FOOTER */
+
+  footer .flex {
+    gap: 30px;
+  }
+
+  footer .line-footer:nth-child(1) {
+    padding-bottom: 45px;
+  }
+
+  footer .line-footer p {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  section.especialidades .flex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* Estilos Gerais*/
+  h2.titulo {
+    font-size: 50px;
+  }
+
+  /* Menu mobile */
+
+  .btn-abrir-menu i {
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 60px;
+  }
+
+  .menu-mobile .btn-fechar i {
+    font-size: 50px;
+  }
+
+  .menu-mobile nav ul li a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 200;
+    padding: 20px 8%;
+    display: block;
+  }
+
+  /* HOME */
+
+  .topo-do-site {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  section.topo-do-site .flex {
+    gap: 90px;
+  }
+
+  .img-topo-site {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .topo-do-site .img-topo-site img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  section.topo-do-site {
+    padding: 0 8%;
+    height: 100%;
+  }
+
+  .topo-do-site h1 {
+    font-size: 49px;
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .topo-do-site .txt-topo-site p {
+    max-width: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .topo-do-site .btn-contato button {
+    padding: 15px 20px;
+    border-radius: 40px;
+    margin-top: 30px;
+  }
+
+  .topo-do-site .btn-contato button a {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .topo-do-site .btn-contato button:hover {
+    background-color: #f0f0f0;
+    /* Adiciona uma leve mudança de cor de fundo */
+  }
+
+  /* ESTILOS ESPECIALIDADES */
+
+  section.especialidades {
+    padding: 0 4%;
+    height: 100%;
+    margin-top: 150px;
+  }
+
+  section.especialidades .flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0px;
+    column-gap: 15px;
+  }
+
+  .especialidades .especialidades-box img {
+    width: 70px;
+  }
+
+  /* Estilos O que eu faço*/
+
+  section.o-que-eu-faco {
+    height: 100%;
+    margin-top: 120px;
+  }
+
+  section.o-que-eu-faco .flex {
     row-gap: 0px;
     column-gap: 40px;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     margin-top: 60px;
-}
+  }
 
-.o-que-eu-faco .especialidades-box {
-    color: #F0EDCF;
-    padding: 45px;
-    margin-top: 45px;
-    border-radius: 20px;
-    transition: .7s;
-    text-align: center;
-    cursor: pointer;
-    max-height: 490px;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #ffffff1d;
-}
+  .o-que-eu-faco .especialidades-box {
+    height: 500px;
+    width: 90%;
+  }
 
-
-.o-que-eu-faco .especialidades-box:hover {
+  .o-que-eu-faco .especialidades-box:hover {
     box-shadow: 0 0 20px #ffffff78;
-}
+  }
 
-.o-que-eu-faco .especialidades-box i {
-    font-size: 70px;
-}
+  .o-que-eu-faco .especialidades-box i {
+    font-size: 80px;
+    color: #0056b3;
+  }
 
-.o-que-eu-faco .especialidades-box h3 {
-    font-size: 28px;
-    margin: 15px 0;
-}
-
-/* ESTILO DO SOBRE */
-
-section.sobre {
-    padding: 80px 4%;
-    height: 100%;
-}
-
-section.sobre .flex {
-    align-items: center;
-    gap: 60px;
-}
-
-.sobre .txt-sobre {
-    color: #F0EDCF;
-}
-
-.sobre .txt-sobre h2 {
+  .o-que-eu-faco .especialidades-box h3 {
     font-size: 40px;
-    text-transform: uppercase;
-    line-height: 40px;
-    margin-bottom: 30px;
-    color: #F0EDCF;
-}
+  }
 
-.sobre .txt-sobre span {
-    display: block;
-    color: #40A2D8;
-}
-
-.sobre .txt-sobre p {
-    margin: 20px 0;
-    letter-spacing: 0.5px;
-    line-height: 27px;
-    text-align: justify;
-}
-
-.sobre .btn-social {
-    margin-top: 47px;
-}
-
-.sobre .btn-social button {
-    margin-right: 20px;
-}
-
-/* ESTILO DOS PROJETOS*/
-
-section.projetos {
-    padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
-}
-
-section.projetos .flex {
-    justify-content: space-around;
-    margin-top: 60px;
-}
-
-.img-project {
-    width: 360px;
-    height: 460px;
-    background-position: 100% 0%;
-    border-radius: 40px;
-    cursor: pointer;
-    position: relative;
-    box-shadow: 0 0 5px 1px #40A2D8;
-}
-
-.img-project:hover {
-    background-position: 100% 100%;
-}
-
-.img-project .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 600;
-    background-color: #000000b8;
-    color: #fff;
-    opacity: 0;
-    transition: .5s;
-}
-
-.img-project .overlay:hover {
-    opacity: 1;
-}
-
-.project1 {
-    background: url(../imagens/the-wellhall.png);
-    background-size: cover;
-    transition: 5s;
-}
-
-.project2 {
-    background: url(../imagens/primefit-academy.png);
-    background-size: cover;
-    transition: 3s;
-}
-
-.project3 {
-    background: url(../imagens/netflix.png);
-    background-size: cover;
-    transition: 3s;
-}
-
-/* ESTILO DO FORMULÁRIO DE CONTATO*/
-
-section.formulario {
-    padding: 80px 4%;
-}
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 40px;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    background-color: #242424;
-    border: none;
-    outline: none;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color: #fff;
-    font-size: 18px;
-    transition: all 0.7s ease-in-out;
-}
-
-form input::placeholder,
-form textarea::placeholder {
-    color: #ffffffc3;
-}
-
-input:focus,
-textarea:focus {
-    box-shadow: 0 0 10px 1px #40A2D8;
-}
-
-form textarea {
-    resize: none;
-    height: 150px;
-}
-
-form .btn-enviar {
-    margin-top: 20px;
-    text-align: center;
-}
-
-form .btn-enviar input[type=submit] {
-    width: 120px;
-    background-color: #40A2D8;
-    color: #000;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .5s;
-}
-
-/* ESTILO DO FOOTER*/
-
-footer {
-    padding: 40px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
-}
-
-footer .flex {
-    align-items: center;
-    justify-content: space-between;
-}
-
-footer .line-footer {
-    padding: 20px 0;
-}
-
-footer .line-footer:nth-child(1) {
-    border-bottom: 3px solid #40A2D8;
-}
-
-footer .line-footer p {
-    display: flex;
-    align-items: center;
-}
-
-footer .line-footer p i {
-    color: #40A2D8;
+  .o-que-eu-faco .especialidades-box p {
     font-size: 22px;
-    padding-right: 5px;
-}
-
-footer .line-footer p a {
-    color: #F0EDCF;
-    font-size: 17px;
-}
-
-/* RESPONSIVIDADE */
-
-@media screen and (min-width: 1021px) {
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        z-index: 3;
-        background-color: #000000;
-        height: 86px;
-    }
-
-    .projetos {
-        scroll-margin-top: 75px;
-    }
-
-    .formulario {
-        scroll-margin-top: 60px;
-    }
-
-    .especialidades,
-    .sobre {
-        scroll-margin-top: 125px;
-    }
-}
-
-@media screen and (max-width: 1231px) {
-    header a {
-        font-size: 17px;
-    }
-
-    header nav.menu-desktop ul li {
-        display: inline-block;
-        padding: 0 20px;
-    }
-
-    header nav.menu-desktop ul {
-        margin-left: 15px;
-    }
-
-    header .btn-contato button {
-        color: white;
-        font-size: 17px;
-
-    }
-}
-
-@media screen and (max-width: 1160px) {
-
-    /* O que eu faço*/
-
-    .o-que-eu-faco .especialidades-box {
-        padding: 20px 40px;
-        height: 500px;
-    }
-
-    .o-que-eu-faco .especialidades-box i {
-        font-size: 4rem;
-    }
-
-    .o-que-eu-faco .especialidades-box h3 {
-        font-size: 1.5rem;
-    }
-
-    .o-que-eu-faco .especialidades-box p {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    /* Sobre */
-
-    .sobre .txt-sobre h2 {
-        font-size: 1.9rem;
-    }
-
-    .sobre .txt-sobre p {
-        text-align: start;
-    }
-
-    /* Projetos */
-
-    section.projetos .flex {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        row-gap: 90px;
-    }
-}
-
-@media screen and (max-width: 1020px) {
-
-    /* CLASSES GERAIS */
-    .flex {
-        flex-direction: column;
-    }
-
-    h2.titulo {
-        font-size: 34px;
-        line-height: 40px;
-    }
-
-    /* CABEÇALHO */
-
-    .btn-abrir-menu {
-        display: block;
-    }
-
-    .btn-abrir-menu i {
-        display: block;
-        position: fixed;
-        top: 0;
-        right: 0;
-        margin-top: 30px;
-        margin-right: 4px;
-        z-index: 7;
-        cursor: pointer;
-    }
-
-    header .menu-desktop,
-    header .menu-desktop+.btn-contato {
-        display: none;
-    }
-
-    .btn-contato {
-        text-align: center;
-    }
-
-
-    .especialidades {
-        scroll-margin-top: -35px;
-    }
-
-    /* HOME */
-
-    .topo-do-site {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        margin-top: 0px;
-        margin-bottom: 70px;
-    }
-
-    section.topo-do-site .flex {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column-reverse;
-        gap: 40px;
-    }
-
-    .img-topo-site {
-        width: 100%;
-        max-width: 350px;
-    }
-
-    .topo-do-site .img-topo-site img {
-        position: relative;
-        z-index: -1;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    section.topo-do-site {
-        padding: 20px 8%;
-    }
-
-    .topo-do-site h1 {
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .topo-do-site .txt-topo-site p {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    /* ESTILOS ESPECIALIDADES */
-
-    section.especialidades {
-        padding: 40px 8%;
-    }
-
-    .especialidades .especialidades-box {
-        transition: .2s ease-out;
-    }
-
-    section.especialidades .flex {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        row-gap: 0px;
-        column-gap: 15px;
-    }
-
-    .especialidades .especialidades-box img {
-        width: 60px;
-    }
-
-    /* ESTILOS SOBRE */
-
-    .img-sobre img {
-        width: 100%;
-    }
-
-    section.projetos .flex {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-
-    }
-
-    section.sobre {
-        padding: 80px 8%;
-    }
-
-    .sobre .txt-sobre h2 {
-        font-size: 34px;
-        line-height: 40px;
-        text-align: center;
-    }
-
-    .btn-social {
-        text-align: center;
-    }
-
-    /* ESTILOS PROJETOS */
-
-    section.projetos {
-        padding: 80px 8%;
-    }
-
-    .img-project {
-        width: 100%;
-        max-width: 360px;
-        margin: 0 auto;
-    }
-
-    section.projetos .flex {
-        gap: 60px;
-    }
-
-    /* FOOTER */
-
-    footer .flex {
-        gap: 30px;
-    }
-
-    footer .line-footer:nth-child(1) {
-        padding-bottom: 45px;
-    }
-
-    footer .line-footer p {
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 830px){
-
-    section.especialidades .flex{
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    /* Estilos Gerais*/
-
-    h2.titulo {
-        font-size: 50px;
-    }
-
-    /* Menu mobile */
-
-    .btn-abrir-menu i {
-        margin-top: 30px;
-        margin-right: 10px;
-        font-size: 60px;
-    }
-
-    .menu-mobile .btn-fechar i {
-        font-size: 50px;
-    }
-
-    .menu-mobile nav ul li a {
-        color: #fff;
-        font-size: 30px;
-        font-weight: 200;
-        padding: 20px 8%;
-        display: block;
-    }
-
-    /* HOME */
-
-    .topo-do-site {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    section.topo-do-site .flex {
-        gap: 90px;
-    }
-
-    .img-topo-site {
-        width: 100%;
-        max-width: 450px;
-    }
-
-    .topo-do-site .img-topo-site img {
-        position: relative;
-        z-index: -1;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    section.topo-do-site {
-        padding: 0 8%;
-        height: 100%;
-    }
-
-    .topo-do-site h1 {
-        font-size: 49px;
-        text-align: center;
-        line-height: 50px;
-        width: 100%;
-        margin-bottom: 70px;
-    }
-
-    .topo-do-site .txt-topo-site p {
-        max-width: 100%;
-        font-size: 25px;
-        text-align: center;
-    }
-
-    .topo-do-site .btn-contato button {
-        padding: 15px 20px;
-        border-radius: 40px;
-        margin-top: 30px;
-    }
-
-    .topo-do-site .btn-contato button a {
-        font-size: 2rem;
-        padding: 10px;
-    }
-
-    .topo-do-site .btn-contato button:hover {
-        background-color: #f0f0f0;
-        /* Adiciona uma leve mudança de cor de fundo */
-    }
-
-    /* ESTILOS ESPECIALIDADES */
-
-    section.especialidades {
-        padding: 0 4%;
-        height: 100%;
-        margin-top: 150px;
-    }
-
-    section.especialidades .flex {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        row-gap: 0px;
-        column-gap: 15px;
-    }
-
-    .especialidades .especialidades-box img{
-        width: 70px;
-    }
-
-    /* Estilos O que eu faço*/
-
-    section.o-que-eu-faco {
-        height: 100%;
-        margin-top: 120px;
-    }
-
-    section.o-que-eu-faco .flex {
-        row-gap: 0px;
-        column-gap: 40px;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        margin-top: 60px;
-    }
-
-    .o-que-eu-faco .especialidades-box {
-        max-height: 700px;
-        height: 100%;
-        width: 90%;
-    }
-
-
-    .o-que-eu-faco .especialidades-box:hover {
-        box-shadow: 0 0 20px #ffffff78;
-    }
-
-    .o-que-eu-faco .especialidades-box i {
-        font-size: 80px;
-        color: #0056b3;
-    }
-
-    .o-que-eu-faco .especialidades-box h3 {
-        font-size: 40px;
-    }
-
-    .o-que-eu-faco .especialidades-box p {
-        font-size: 22px;
-        letter-spacing: 4px;
-        width: 100%;
-    }
-
-    /* ESTILOS SOBRE */
-
-    section.sobre {
-        height: 100%;
-    }
-
-    .img-sobre img {
-        width: 100%;
-    }
-
-    section.sobre {
-        padding: 80px 8%;
-    }
-
-    .sobre .txt-sobre h2 {
-        font-size: 45px;
-        line-height: 40px;
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    .sobre .txt-sobre p {
-        font-size: 1.4rem;
-        letter-spacing: 3px;
-        line-height: 1.5;
-        text-align: start;
-        margin-top: 50px;
-    }
-
-    .sobre .btn-social {
-        text-align: center;
-        margin-top: 100px;
-    }
-
-    .sobre .btn-social button {
-        width: 90px;
-        height: 90px;
-        font-size: 30px;
-        margin: 0 20px;
-    }
-
-    /* Estilos Projetos */
-
-    section.projetos {
-        padding: 80px 5%;
-    }
-
-    section.projetos .flex {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-around;
-        margin-top: 120px;
-    }
-
-    /* Contato */
-
-    form input,
-    form textarea {
-        padding: 30px 15px;
-        border-radius: 20px;
-    }
-
-    form input::placeholder,
-    form textarea::placeholder {
-        font-size: 23px;
-    }
-
-    form .btn-enviar input[type=submit] {
-        width: 130px;
-        font-size: 23px;
-    }
-
-    /* Footer */
-
-    footer .btn-social button {
-        width: 80px;
-        height: 80px;
-        font-size: 30px;
-        margin: 0 20px;
-    }
-
-    footer .line-footer p i {
-        font-size: 30px;
-    }
-
-    footer .line-footer p a {
-        font-size: 30px;
-        transition: all .5s ease;
-    }
-
-    footer .line-footer p a:hover {
-        color: #40A2D8;
-    }
+    letter-spacing: 1px;
+    width: 100%;
+  }
+
+  /* ESTILOS SOBRE */
+
+  section.sobre {
+    height: 100%;
+  }
+
+  .img-sobre img {
+    width: 100%;
+  }
+
+  section.sobre {
+    padding: 80px 8%;
+  }
+
+  .sobre .txt-sobre h2 {
+    font-size: 45px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .sobre .txt-sobre p {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    text-align: start;
+    margin-top: 50px;
+  }
+
+  .sobre .btn-social {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .sobre .btn-social button {
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+    margin: 0 20px;
+  }
+
+  /* Estilos Projetos */
+
+  section.projetos {
+    padding: 80px 5%;
+  }
+
+  section.projetos .flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    margin-top: 120px;
+  }
+
+  /* Contato */
+
+  form input,
+  form textarea {
+    padding: 30px 15px;
+    border-radius: 20px;
+  }
+
+  form input::placeholder,
+  form textarea::placeholder {
+    font-size: 23px;
+  }
+
+  form .btn-enviar input[type="submit"] {
+    width: 130px;
+    font-size: 23px;
+  }
+
+  /* Footer */
+
+  footer .btn-social button {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    margin: 0 20px;
+  }
+
+  footer .line-footer p i {
+    font-size: 30px;
+  }
+
+  footer .line-footer p a {
+    font-size: 30px;
+    transition: all 0.5s ease;
+  }
+
+  footer .line-footer p a:hover {
+    color: #40a2d8;
+  }
 }

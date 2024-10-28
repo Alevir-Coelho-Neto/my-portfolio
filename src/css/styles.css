@@ -280,10 +280,10 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site h1 {
-  color: #f0edcf;
+  color: #fff;
   font-size: 42px;
-  line-height: 40px;
-  text-transform: uppercase;
+  line-height: 47px;
+  text-transform:uppercase;
 }
 
 .topo-do-site .txt-topo-site h1 span {
@@ -292,9 +292,9 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .txt-topo-site p {
-  color: #f0edcf;
+  color: #ffff;
   margin: 40px 0 60px;
-  max-width: 80%;
+  max-width: 85%;
   letter-spacing: 1.2px;
 }
 
@@ -401,7 +401,7 @@ section.o-que-eu-faco .flex {
 }
 
 .o-que-eu-faco .especialidades-box {
-  color: #f0edcf;
+  color: #ffff;
   padding: 45px;
   margin-top: 45px;
   border-radius: 20px;
@@ -448,15 +448,15 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre {
-  color: #f0edcf;
+  color: #ffff;
 }
 
 .sobre .txt-sobre h2 {
   font-size: 40px;
   text-transform: uppercase;
-  line-height: 40px;
+  line-height: 45px;
   margin-bottom: 30px;
-  color: #f0edcf;
+  color: #ffff;
 }
 
 .sobre .txt-sobre span {
@@ -635,7 +635,7 @@ footer .line-footer p i {
 }
 
 footer .line-footer p a {
-  color: #f0edcf;
+  color: #ffff;
   font-size: 17px;
 }
 

@@ -27,20 +27,80 @@ body {
   font-weight: 600;
   background-color: #1195dc;
   border: 0;
-  border-radius: 25px;
+  border-radius: 50px;
   cursor: pointer;
-  transition: 0.7s ease;
-  color: #ffffff;
+  transition: 0.5s ease;
+  color: #000;
   font-size: 20px;
   margin: 0;
+  letter-spacing: 1px;
 }
 
-h2.titulo {
+h2.titulo,
+.text-project h2 {
   color: #f1f1f1;
   font-size: 38px;
   text-align: center;
   text-transform: uppercase;
 }
+
+a {
+  text-decoration: none;
+}
+
+/*---------------------*/
+
+.text-project {
+  position: sticky;
+  height: 100%;
+  top: 40%;
+  margin: 50px 0;
+  width: 50%;
+  width: fit-content;
+}
+
+.text-project h2 {
+  font-size: 60px;
+  text-align: start;
+  letter-spacing: 4px;
+}
+
+.text-project p {
+  color: #f1f1f1;
+  align-items: center;
+  font-size: 23px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.btn-contato.btn-contato-project button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  width: 230px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.btn-contato.btn-contato-project {
+  width: fit-content;
+}
+
+.btn-contato.btn-contato-project button i {
+  font-size: 34px;
+  padding-left: 5px;
+  transform: rotate(45deg);
+  transition: all 0.2s;
+}
+
+.btn-contato.btn-contato-project button:hover i {
+  transform: rotate(360deg);
+  color: #fff;
+  padding-top: 3px;
+}
+
+/*-----------*/
 
 h2.titulo span {
   color: #40a2d8;
@@ -62,7 +122,7 @@ form .btn-enviar input:hover[type="submit"] {
   font-size: 22px;
   cursor: pointer;
   margin: 0 5px;
-  transition: 0.3s;
+  transition: 0.5s ease;
   color: black;
 }
 
@@ -128,8 +188,7 @@ header a {
 
 header .btn-contato button {
   background-color: #1195dc;
-  color: #000;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 
 header .btn-contato button:hover {
@@ -283,7 +342,7 @@ section.topo-do-site .flex {
   color: #fff;
   font-size: 42px;
   line-height: 47px;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
 .topo-do-site .txt-topo-site h1 span {
@@ -309,7 +368,6 @@ section.topo-do-site .flex {
 .topo-do-site .btn-contato button a {
   text-decoration: none;
   color: black;
-  transition: 0.8s;
 }
 
 .topo-do-site .btn-contato button:hover {
@@ -410,7 +468,7 @@ section.o-que-eu-faco .flex {
   cursor: pointer;
   width: 400px;
   height: 480px;
-  border: 1px solid #ffffff1d; 
+  border: 1px solid #ffffff1d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -428,7 +486,6 @@ section.o-que-eu-faco .flex {
 .o-que-eu-faco .especialidades-box h3 {
   font-size: 28px;
   margin: 20px 0;
-
 }
 
 /* ESTILO DO SOBRE */
@@ -492,13 +549,14 @@ section.projetos .flex {
 }
 
 .img-project {
-  width: 360px;
-  height: 460px;
+  width: 400px;
+  height: 400px;
   background-position: 100% 0%;
-  border-radius: 40px;
+  border-radius: 30px 70px 30px 70px;
   cursor: pointer;
   position: relative;
-  box-shadow: 0 0 10px 2px #40a3d8a8
+  box-shadow: 0 0 10px 2px #57a0ff8b;
+  margin-bottom: 20%;
 }
 
 .img-project:hover {
@@ -511,7 +569,7 @@ section.projetos .flex {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 40px;
+  border-radius: 30px 70px 30px 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -528,21 +586,27 @@ section.projetos .flex {
 }
 
 .project1 {
-  background: url(../imagens/the-wellhall.png);
+  background: url(../imagens/build-next.png);
   background-size: cover;
-  transition: 5s;
+  transition: 6s;
 }
 
 .project2 {
+  background: url(../imagens/luxe-wave.png);
+  background-size: cover;
+  transition: 6s;
+}
+
+.project3 {
   background: url(../imagens/primefit-academy.png);
   background-size: cover;
   transition: 3s;
 }
 
-.project3 {
+.project4 {
   background: url(../imagens/netflix.png);
   background-size: cover;
-  transition: 3s;
+  transition: 4s;
 }
 
 /* ESTILO DO FORMULÁRIO DE CONTATO*/
@@ -730,7 +794,6 @@ footer .line-footer p a {
 }
 
 @media screen and (max-width: 1020px) {
-
   /* CLASSES GERAIS */
   .flex {
     flex-direction: column;

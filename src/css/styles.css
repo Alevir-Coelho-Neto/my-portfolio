@@ -192,7 +192,7 @@ header .btn-contato button {
 }
 
 header .btn-contato button:hover {
-  color: white;
+  color: #fff;
 }
 
 header nav.menu-desktop a:hover {
@@ -365,14 +365,13 @@ section.topo-do-site .flex {
   object-fit: cover;
 }
 
-.topo-do-site .btn-contato button a {
-  text-decoration: none;
-  color: black;
+.topo-do-site .btn-contato button{
+  margin: 0 20px 0 0;
 }
 
 .topo-do-site .btn-contato button:hover {
   background-color: #f0f0f0;
-  /* Adiciona uma leve mudança de cor de fundo */
+  color: black;
 }
 
 /* Estilos das Especialidades */
@@ -1036,6 +1035,7 @@ footer .line-footer p a {
     padding: 15px 20px;
     border-radius: 40px;
     margin-top: 30px;
+    border: 1px solid red;
   }
 
   .topo-do-site .btn-contato button a {
@@ -1045,7 +1045,7 @@ footer .line-footer p a {
 
   .topo-do-site .btn-contato button:hover {
     background-color: #f0f0f0;
-    /* Adiciona uma leve mudança de cor de fundo */
+
   }
 
   /* ESTILOS ESPECIALIDADES */

@@ -317,6 +317,55 @@ header .menu-desktop .logo a img {
   display: none;
 }
 
+/* Estilo Pre-loader*/
+
+@keyframes fall {
+  0% {height: 0;}
+  100% {height: 100%;}
+}
+
+.falling-rect {
+  width: 100%;
+  height: 0;
+  animation: fall .5s ease-in-out forwards;
+  background: black;
+}
+
+.falling-rect:nth-child(1){
+  animation-delay: 0.6s;
+}
+
+.falling-rect:nth-child(2){
+  animation-delay: 0.5s;
+}
+
+.falling-rect:nth-child(3){
+  animation-delay: 0.4s;
+}
+
+.falling-rect:nth-child(4){
+  animation-delay: 0.3s;
+}
+
+.falling-rect:nth-child(5){
+  animation-delay: 0.2s;
+}
+
+.falling-rect:nth-child(6){
+  animation-delay: 0.1s;
+}
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: white;
+  display: flex;
+}
+
 /* ESTILO DO TOPO DO SITE */
 
 .topo-do-site {
@@ -603,7 +652,7 @@ section.projetos .flex {
 }
 
 .project4 {
-  background: url(../imagens/netflix.png);
+  background: url(../imagens/clonenetflix.png);
   background-size: cover;
   transition: 4s;
 }
@@ -717,7 +766,7 @@ footer .line-footer p a {
   }
 
   .projetos {
-    scroll-margin-top: 75px;
+    scroll-margin-top: 64px;
   }
 
   .formulario {
@@ -1187,7 +1236,7 @@ footer .line-footer p a {
     font-size: 40px;
   }
 
-  .cards-project{
+  .cards-project {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
@@ -1206,7 +1255,7 @@ footer .line-footer p a {
     margin-bottom: 20%;
   }
 
-  .img-project .overlay{
+  .img-project .overlay {
     border-radius: 30px;
   }
 
@@ -1248,5 +1297,12 @@ footer .line-footer p a {
 
   footer .line-footer p a:hover {
     color: #40a2d8;
+  }
+}
+
+@media (max-width: 480px) {
+  .topo-do-site .btn-contato button {
+    margin: 0 7px 0 0;
+    font-size: 1rem;
   }
 }

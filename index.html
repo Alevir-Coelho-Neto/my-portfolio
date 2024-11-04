@@ -7,15 +7,14 @@
   <title>Alevir Coelho Portfólio</title>
   <link rel="stylesheet" href="./src/css/styles.css">
   <link rel="stylesheet" href="./src/css/fonts.css">
-  <link rel="shortcut icon" href="./src/imagens/letter-a(1).png" type="image/x-icon">
+  <link rel="shortcut icon" href="./src/imagens/logo.png" type="image/x-icon">
   <!--BOOTSTRAP ICONS-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!--FIM BOOTSTRAP ICONS-->
+  <!--DEV ICONS-->
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <script src="https://kit.fontawesome.com/82cdb52a5d.js" crossorigin="anonymous"></script>
-  <script src="./src/js/menu.js" defer></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="./src/js/efect-scroll.js" defer></script>
+  <!--FIM DEV ICONS-->
+  
 </head>
 
 <body>
@@ -25,7 +24,7 @@
       <nav class="menu-desktop">
         <div class="logo">
           <a href="#">
-            <img src="./src/imagens/letter-a(1).png" alt="">
+            <img src="./src/imagens/logo.png" alt="">
           </a>
         </div><!--Logo-->
         <ul>
@@ -67,6 +66,17 @@
     </div><!--interface -->
   </header>
 
+  <!-- Pre-loader -->
+  
+  <div id="preloader">
+    <div class="falling-rect"></div>
+    <div class="falling-rect"></div>
+    <div class="falling-rect"></div>
+    <div class="falling-rect"></div>
+    <div class="falling-rect"></div>
+    <div class="falling-rect"></div>
+  </div>
+
   <main>
     <section id="topo-do-site" class="topo-do-site">
       <div class="interface">
@@ -75,14 +85,12 @@
             <h1>Turning Your Ideas into Digital Reality<span>.</span></h1>
             <p>Are you ready to take your project to the next level? Contact me to find out how we can turn your ideas into a high-impact digital reality. My mission is to highlight your vision in the online universe in an extraordinary way. Let's make it happen together?</p>
             <div class="btn-contato">
-              <a href="#formulario">
-                <button>Contact me</button>
-              </a>
-
-              <a href="./src/assets/Alevir-Coelho-Neto.pdf" download>
-                <button>Download CV</button>
-            </a>
-              
+                <a href="#formulario">
+                  <button>Contact me</button>
+                </a>
+                <a href="./src/assets/Alevir-Coelho-Neto.pdf" download>
+                  <button>Download CV</button>
+                </a>
             </div>
           </div><!--txt-topo-site-->
 
@@ -255,7 +263,7 @@
         <div class="flex">
           <div class="text-project">
             <h2 class="titulo">My<span> projects</span></h2>
-            <p>take a look at some of my most recent projects</p>
+            <p class="paragrafo-projetos">take a look at some of my most recent projects</p>
             <div class="btn-contato btn-contato-project">
               <a href="#">
                 <button>all projects <i class="bi bi-arrow-right-short"></i></button>
@@ -315,6 +323,9 @@
     </div><!--interface-->
   </footer>
 
+  <script src="./src/js/menu.js" defer></script>
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="./src/js/efect-scroll.js" defer></script>
 </body>
 
 </html>

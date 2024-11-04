@@ -33,7 +33,7 @@ const observer = new IntersectionObserver(
             }
         });
     },
-    { threshold: 0.6 } // Ajuste o valor do threshold conforme necessário
+    { threshold: 0.28 } // Ajuste o valor do threshold conforme necessário
 );
 
 sections.forEach((section) => observer.observe(section));

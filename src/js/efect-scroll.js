@@ -1,18 +1,13 @@
 window.revelar = ScrollReveal({ reset: false });
 
-/*Remover o preloader assim que a pagina carregar completamente*/
-/*window.addEventListener("load", function () {
-  const preloader = document.getElementById("preloader");
-  preloader.style.display = "none";
-});*/
-
 window.addEventListener("load", function () {
   const preloader = document.getElementById("preloader");
-  setTimeout(function() {
+  setTimeout(function () {
     preloader.style.display = "none";
   }, 1000); // 2000ms = 2 segundos de atraso
 });
 
+/* Config padrão scroll reveal*/
 
 // TOPO DO SITE
 revelar.reveal(".efeito-txt-topo", {
@@ -37,41 +32,13 @@ revelar.reveal(".titulo", {
 });
 
 // SESSÃO ESPECIALIDADES
+
 revelar.reveal(".efeito-especialidades", {
   duration: 1500,
   distance: "90px",
   delay: 300,
   origin: "top",
   scale: 0.5,
-  opacity: 0,
-  easing: "ease-out",
-});
-
-revelar.reveal(".efeito-especialidades1", {
-  duration: 1100,
-  distance: "90px",
-  delay: 500,
-  origin: "left",
-  scale: 0.9,
-  opacity: 0,
-  easing: "ease-out",
-});
-
-revelar.reveal(".efeito-especialidades2", {
-  duration: 1100,
-  distance: "90px",
-  delay: 1000,
-  scale: 0.9,
-  opacity: 0,
-  easing: "ease-out",
-});
-
-revelar.reveal(".efeito-especialidades3", {
-  duration: 1100,
-  distance: "90px",
-  delay: 1500,
-  origin: "right",
-  scale: 0.9,
   opacity: 0,
   easing: "ease-out",
 });
@@ -104,44 +71,6 @@ revelar.reveal(".paragrafo-projetos", {
   origin: "left",
   delay: 300,
   easing: "ease-out",
-});
-
-// EFEITO DOS CARDS
-
-revelar.reveal(".efeito-img-projetos1", {
-  duration: 1300,
-  distance: "90px",
-  delay: 300,
-  origin: "right",
-  opacity: 0,
-  easing: "ease-in-out",
-});
-
-revelar.reveal(".efeito-img-projetos2", {
-  duration: 1300,
-  distance: "90px",
-  delay: 300,
-  origin: "right",
-  opacity: 0,
-  easing: "ease-in-out",
-});
-
-revelar.reveal(".efeito-img-projetos3", {
-  duration: 1300,
-  distance: "90px",
-  delay: 300,
-  origin: "right",
-  opacity: 0,
-  easing: "ease-in-out",
-});
-
-revelar.reveal(".efeito-img-projetos4", {
-  duration: 1300,
-  distance: "90px",
-  delay: 300,
-  origin: "right",
-  opacity: 0,
-  easing: "ease-in-out",
 });
 
 // EFEITO SESSÃO CONTATO
@@ -190,3 +119,144 @@ revelar.reveal(".efect-btn-enviar", {
   opacity: 0,
   easing: "ease-out",
 });
+
+// Config para telas maiores
+
+if (window.matchMedia("(min-width: 1024px)").matches) {
+  // SESSÃO ESPECIALIDADES
+
+  revelar.reveal(".efeito-especialidades1", {
+    duration: 1100,
+    distance: "90px",
+    delay: 500,
+    origin: "left",
+    scale: 0.9,
+    opacity: 0,
+    easing: "ease-out",
+  });
+
+  revelar.reveal(".efeito-especialidades2", {
+    duration: 1100,
+    distance: "90px",
+    delay: 1000,
+    scale: 0.9,
+    opacity: 0,
+    easing: "ease-out",
+  });
+
+  revelar.reveal(".efeito-especialidades3", {
+    duration: 1100,
+    distance: "90px",
+    delay: 1500,
+    origin: "right",
+    scale: 0.9,
+    opacity: 0,
+    easing: "ease-out",
+  });
+
+  // EFEITO DOS CARDS
+
+  revelar.reveal(".efeito-img-projetos1", {
+    duration: 1300,
+    distance: "90px",
+    delay: 300,
+    origin: "right",
+    opacity: 0,
+    easing: "ease-in-out",
+  });
+
+  revelar.reveal(".efeito-img-projetos2", {
+    duration: 1300,
+    distance: "90px",
+    delay: 300,
+    origin: "right",
+    opacity: 0,
+    easing: "ease-in-out",
+  });
+
+  revelar.reveal(".efeito-img-projetos3", {
+    duration: 1300,
+    distance: "90px",
+    delay: 300,
+    origin: "right",
+    opacity: 0,
+    easing: "ease-in-out",
+  });
+
+  revelar.reveal(".efeito-img-projetos4", {
+    duration: 1300,
+    distance: "90px",
+    delay: 300,
+    origin: "right",
+    opacity: 0,
+    easing: "ease-in-out",
+  });
+} else {
+  revelar.reveal(".efeito-especialidades1", {
+    duration: 1100,
+    distance: "90px",
+    delay: 500,
+    origin: "left",
+    scale: 0.9,
+    opacity: 0,
+    easing: "ease-out",
+  });
+
+  revelar.reveal(".efeito-especialidades2", {
+    duration: 1100,
+    distance: "90px",
+    origin: "right",
+    delay: 500,
+    scale: 0.9,
+    opacity: 0,
+    easing: "ease-out",
+  });
+
+  revelar.reveal(".efeito-especialidades3", {
+    duration: 1100,
+    distance: "90px",
+    delay: 500,
+    origin: "left",
+    scale: 0.9,
+    opacity: 0,
+    easing: "ease-out",
+  });
+
+  // EFEITO DOS CARDS
+
+  revelar.reveal(".efeito-img-projetos1", {
+    duration: 1300,
+    distance: "90px",
+    delay: 300,
+    origin: "left",
+    opacity: 0,
+    easing: "ease-in-out",
+  });
+
+  revelar.reveal(".efeito-img-projetos2", {
+    duration: 1300,
+    distance: "90px",
+    delay: 300,
+    origin: "right",
+    opacity: 0,
+    easing: "ease-in-out",
+  });
+
+  revelar.reveal(".efeito-img-projetos3", {
+    duration: 1300,
+    distance: "90px",
+    delay: 300,
+    origin: "left",
+    opacity: 0,
+    easing: "ease-in-out",
+  });
+
+  revelar.reveal(".efeito-img-projetos4", {
+    duration: 1300,
+    distance: "90px",
+    delay: 300,
+    origin: "right",
+    opacity: 0,
+    easing: "ease-in-out",
+  });
+}

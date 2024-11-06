@@ -260,3 +260,16 @@ if (window.matchMedia("(min-width: 1024px)").matches) {
     easing: "ease-in-out",
   });
 }
+
+/* Menu mobile saindo da tela*/
+
+function ajustarOverFlow() {
+  if (window.innerWidth <= 1020) {
+    document.documentElement.style.overflowX = "hidden"
+    document.body.style.overflowX = "hidden"
+    console.log("Dispositivo é um celular ou tablet");
+  }
+}
+
+ajustarOverFlow()
+

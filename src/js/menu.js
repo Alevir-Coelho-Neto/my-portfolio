@@ -37,3 +37,14 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => observer.observe(section));
+
+/* Menu mobile saindo da tela*/
+
+function ajustarOverFlow() {
+    if (window.innerWidth <= 1020) {
+      document.documentElement.style.overflowX = "hidden"
+      document.body.style.overflowX = "hidden"
+    }
+  }
+  
+  ajustarOverFlow()

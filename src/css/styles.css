@@ -88,10 +88,10 @@ a {
 }
 
 .btn-contato.btn-contato-project button i {
-  font-size: 34px;
+  font-size: 30px;
   padding-left: 5px;
   transform: rotate(45deg);
-  transition: all 0.2s;
+  transition: transform .4s ease;
 }
 
 .btn-contato.btn-contato-project button:hover i {

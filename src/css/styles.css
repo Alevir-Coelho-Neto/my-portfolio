@@ -639,25 +639,25 @@ section.projetos .flex {
 }
 
 .project1 {
-  background: url(../imagens/build-next.png);
+  background: url(../imagens/build-next.webp);
   background-size: cover;
   transition: 6s;
 }
 
 .project2 {
-  background: url(../imagens/luxe-wave.png);
+  background: url(../imagens/luxe-wave.webp);
   background-size: cover;
   transition: 6s;
 }
 
 .project3 {
-  background: url(../imagens/primefit-academy.png);
+  background: url(../imagens/primefit-academy.webp);
   background-size: cover;
   transition: 3s;
 }
 
 .project4 {
-  background: url(../imagens/clonenetflix.png);
+  background: url(../imagens/clonenetflix.webp);
   background-size: cover;
   transition: 4s;
 }
